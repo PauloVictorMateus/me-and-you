@@ -21,10 +21,12 @@ const CardFlip = () => {
     <div
       style={{
         transition: "transform 0.3s ease",
-        width: "30rem",
-        perspective: "3000px",
+        width: "90%",
+        maxWidth: "30rem",
+        perspective: "2000px",
         transform: isFlipped ? "scale(1.1)" : "scale(1)",
         opacity: isFlipped ? 1 : undefined,
+        margin: "auto", // Centraliza horizontalmente
       }}
       onClick={() => setIsFlipped(!isFlipped)}
     >
@@ -44,7 +46,8 @@ const CardFlip = () => {
                 width: "100%",
                 cursor: "pointer",
                 borderRadius: "1.5rem",
-                height: "600px",
+                height: "auto",
+                maxHeight: "60vh",
                 boxShadow: "0 0 10px 4px rgba(0, 0, 0, 0.4)",
                 border: "2px solid",
                 borderImageSlice: 1,
@@ -64,11 +67,15 @@ const CardFlip = () => {
               alignItems: "center",
               justifyContent: "center",
               width: "100%",
-              height: "400px",
+              height: "auto",
+              minHeight: "40vh",
+              maxHeight: "60vh",
               borderRadius: "1rem",
               border: "2px solid",
               borderImageSlice: 1,
               borderImageSource: "linear-gradient(to bottom, #A6C2E6, #DAACC9)",
+              padding: "1rem", // Espaçamento interno para o conteúdo
+              boxSizing: "border-box", // Inclui padding no cálculo de largura/altura
             }}
           >
             <p
