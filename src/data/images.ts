@@ -10,7 +10,7 @@ import Photo8 from "../../public/assets/photo8.jpg";
 export const images = [
   {
     image: Photo1,
-    message: "Eu te amo des de o primeiro dia que te vi <3",
+    message: "Eu te amo desde o primeiro dia que te vi <3",
   },
   {
     image: Photo2,
@@ -18,7 +18,7 @@ export const images = [
   },
   {
     image: Photo3,
-    message: "Eu te adoro meu amor <3",
+    message: "Eu te adoro, meu amor <3",
   },
   {
     image: Photo4,
@@ -38,6 +38,6 @@ export const images = [
   },
   {
     image: Photo8,
-    message: "Eu te amo ate o infinito das estrelas <3",
+    message: "Eu te amo até o infinito das estrelas <3",
   },
 ];
